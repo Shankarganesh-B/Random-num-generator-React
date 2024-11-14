@@ -15,7 +15,7 @@ A simple React application that generates random numbers within a user-defined r
 - CSS
 
 ## Deployment
-Hoisted on GitHub and deployed on vercel. Here is the live website link:
+Hoisted on GitHub and deployed on vercel. Here is the live website link: https://random-num-generator-react.vercel.app/
 ## Usage
 - Enter Minimum and Maximum Values:
 
