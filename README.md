@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Random Number Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React application that generates random numbers within a user-defined range. The user can specify the minimum and maximum values, and the app will generate a random number between them each time the "Generate Random Number" button is pressed. The generated numbers are displayed below the input fields.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dynamic Range Input**: Allows users to specify the minimum and maximum range for generating random numbers.
+- **Random Number Generation**: Generates a random number within the specified range when the button is clicked.
+- **History of Generated Numbers**: Displays a list of all previously generated numbers.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- JavaScript
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
+Hoisted on GitHub and deployed on vercel. Here is the live website link:
+## Usage
+- Enter Minimum and Maximum Values:
 
-### `npm test`
+- Enter the minimum and maximum values in the respective input fields.
+Generate Random Number:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Click the "Generate Random Number" button to generate a random number between the specified range.
+View Generated Numbers:
 
-### `npm run build`
+- Below the input fields, you'll see the list of previously generated numbers.
+Disabled Button:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The "Generate Random Number" button will be disabled if the difference between the max and min values is less than 1 to prevent invalid ranges.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
+```php
+Copy code
+├── public/
+│   └── index.html                # HTML template
+├── src/
+│   ├── components/
+│   │   ├── Generated_numbers.js  # Displays list of generated numbers
+│   │   └── Random_number_generator.js  # User inputs and generates random numbers
+│   ├── App.js                    # Main App component
+│   ├── index.css                 # Global styles
+│   └── index.js                  # Entry point for React app
+├── package.json                  # Project dependencies
+└── README.md                     # Project documentation
+```
+## License
+This project is open-source and available under the MIT License.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Acknowledgments
+Created using React.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Customization
+Styling: You can modify the index.css file to change the appearance of the app.
+Functionality: You can add more features, such as setting a limit for the number of numbers generated, or even exporting the list of generated numbers.
